@@ -1,133 +1,95 @@
 \documentclass[10pt]{extarticle}
 \usepackage{apMod}
-% Licensed: https://www.gnu.org/licenses/gpl-3.0.html
-% Template author: Anindya Prithvi
-% define all your stuff here
-\newcommand{\yourname}{Mikasa Ackerman}%
-\newcommand{\youremail}{mikasaa@iiitd.ac.in}%
-\newcommand{\youraddress}{Address: F-16, Shiganshina District, near Big Tree\\Wall Maria, Paradise Island}%
-\newcommand{\yourrollno}{2020024}%
-\newcommand{\yourDOB}{18 January, 2003}%
-\newcommand{\yourgithub}{https://github.com/Anindya-Prithvi}%
-\newcommand{\yourphoto}{myphoto}% Only the filname without extension
 
-\newcommand{\yourlieinapril}{Shigatsu wa kimi no uso}%lol
+\newcommand{\yourname}{Navya Gupta}
+\newcommand{\youremail}{navya23343@iiitd.ac.in}
+\newcommand{\youraddress}{House No. 203, Sector 2\\Kurukshetra, Haryana}
+\newcommand{\yourrollno}{2023343}
+\newcommand{\yourDOB}{3 November, 2005}
+\newcommand{\yourgithub}{}
+\newcommand{\yourphoto}{myphoto}
 
-\newcommand{\contain}{0}%1 if you make each section of your resume inseperable (try and see) This was added to deal with newpage within section
+\newcommand{\contain}{0}
 
 \begin{document}
-\cvheader%
-%
+\cvheader
+
 \begin{contained}
 \sectionC{Education}
 \begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
-    \cveducationitem{Indraprastha Institute of Information Technology, Delhi}{B.Tech (CSE)}{2020 - present}{CGPA: 10.1\newline(Till 4\textsuperscript{th} semester)}
-    \cveducationitem{Trost District High School}{CBSE, Standard 12, PCM+CS}{2018-2020}{Percentage : 99.8\%}
-    \cveducationitem{Shiganshina International School}{CBSE, Standard 10}{2017 - 2018}{Percentage : 99.98\%}
-\end{longtable}%
-\vspace{0pt}
+    \cveducationitem{Indraprastha Institute of Information Technology, Delhi}{B.Tech (CSD)}{2023 - present}{CGPA: 7.9\newline(Till 2\textsuperscript{nd} semester)}
+    \cveducationitem{The Vivekanand School, Narela}{CBSE, Standard 12, PCM}{2021-2023}{Percentage: 95.6\%}
+    \cveducationitem{Wisdom World School, Kurukshetra}{CBSE, Standard 10}{2011-2021}{Percentage: 97.6\%}
+\end{longtable}
 \end{contained}
-%
+
 \begin{contained}
 \sectionC{Skills}
-%nothing to modularize here, just write your stuff
 \begin{longtable}{p{0.2\textwidth}p{0.75\textwidth}p{0.05\textwidth}}
-    \textbf{Expertise Area:}&
-    Colonel Development, Object Oriented Programming, Statistical Machine Learning, \LaTeX\\
     \textbf{Programming \newline Languages:}&
-    Python, C++, Nim, Haskell, Jabbascript, Bhailang, Insomnia, oOo code\\
+    Python, C++, Java\\
     \textbf{Tools and\newline Technologies:}&
-    Git, GitHub, Github Actions, Ethereum VM, Web3.js/py, Ganache, Brownie, Shells
-    (ZSH, Bash), Android Studio, IntelliJ IDEA, PyCharm, PyTorch, VSCode,
-    Coppelia Sim, Overleaf, Heroku, JavaFX, Angular, Google Collab, Kaggle\\
-    \textbf{Technical Electives:}&
-    Grape Theory, Statistical Machine Earning, Not Practical Bioinformatics, Singles and Systems, Computer Disassembly
-\end{longtable}%
-\vspace{0pt}
+    Git, GitHub, Figma, JUnit, Eclipse, Visual Studio Code, Android Studio\\
+    \textbf{Core \newline Competencies:}&
+    Object-Oriented Programming, Data Structures, RISC-V Assembly, Digital Circuit Design, User Interface Design, Research Methods\\
+    \textbf{Relevant\newline Coursework:}&
+    Advanced Programming, Operating Systems, Data Structures \& Algorithms, Computer Organization, Human-Computer Interaction, Design Processes
+\end{longtable}
 \end{contained}
-%
-\begin{contained}
-\sectionC{Work Experience}
-%nothing to modularize here, just write your stuff
-\begingroup%
-% \renewcommand\arraystretch{1}%
-\begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
-    \textbf{Recapture Wall Maria, Eldia United}
-    \newline{Advisor: Dr. Erwin Smith, Taicho}
-    \newline%
-    We were tasked with detaining Reiner, a marleyan warrior. We could not do it, however Armin succeeded in his plan. Armin is now the Colossal Titan. Moye moye.&(Jun, 21 - Jul, 22)\\
-    \textbf{Stop the Rumbling}
-    \newline{Advisor: Armin Arlert, Jean, Connie}
-    \newline%
-    Played a key role in the fight against Eren Yeager and his rumbling, which threatened to destroy the world. Put an end to the rumbling and saved the world from destruction (20\%).&(Nov, 23 - Dec, 23)\\
-\end{longtable}%
-\endgroup%
-\end{contained}
-\vspace{0pt}
+
 \begin{contained}
 \sectionC{Projects}
-% \vspace{-10pt}%
-%nothing to modularize here, just write your stuff
-%might add a row with \newline for techstack, but it seems pretty useless lol
 \begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
-    \textbf{Marked Money – Decentralized App}\newline
-    A fully functional blockchain solution for everyday transactions
-    involving low-trust intermediaries. Relies on EVM and solidity (smart contract).
-    Instance deployed \href{https://moyemoye/}{here}.
+    \textbf{RISC-V Assembler Simulator}\newline
+    Designed and implemented a subset of the RV32I RISC-V Instruction Set Architecture. Built parser and execution engine for assembly instructions with Python.
     &Team Size-4
-    \newline (Dec, 21 – Jan, 22)\\
-    \textbf{Will Hero – GUI game}\newline
-    A tap-to-play single player game in JAVA using JavaFX. Uses various
-    concepts of Multithreading and self-designed 2D physics engine. Repository \href{https://github.com/vibsterD/CSE201-AP-Project}{here}.
-    &Team Size-2
-    \newline (Oct, 21 - Jan, 22)\\
-    \textbf{Evaluation of RdRp in SARSCOV2 as a drug target}\newline
-    An EDA+molecular docking of RdRp based on previous literary works. Used
-    bioinformatics tools for molecular docking (autodock) and protein/nucleotide
-    alignment. Final report \href{https://anindya-prithvi.github.io/filehost/PB_Project.pdf}{here}.
-    &Team Size-6
-    \newline (March, 22 - May, 22)\\
-    \textbf{Analyzing generative capabilities of Convolutional Autoencoders}\newline
-    Analysis of the latent space of a trained network (on MNIST digits dataset). Obtained MLE estimates of all classes in the latent space with successful reconstruction (which might fool human discriminators). Repository \href{https://github.com/Anindya-Prithvi/MNIST_CAELatentSpace}{here}.
+    \newline (Mar, 24 – Apr, 24)\\
+    \textbf{IGoAbroad - Study Abroad Platform}\newline
+    Designed comprehensive UI/UX for a foreign university application platform using Figma. Conducted user research, created interactive prototypes, and implemented HCI principles for optimal user experience.
+    &Team Size-5
+    \newline (Oct, 23 - Nov, 23)\\
+    \textbf{College ERP System}\newline
+    Developed a CLI-based college management system implementing course registration, enrollment tracking, and academic records management using Java and OOP principles.
     &Individual
-    \newline (May, 22 - Present)\\
+    \newline (Sep, 24 - Oct, 24)\\
+    \textbf{CANSAT Satellite Project}\newline
+    Working on mechanical design for a compact satellite (size of a can) as part of national-level competition by INSPACE and ASI. Focusing on telemetry data transmission systems and deployment mechanisms.
+    &Team Size-8
+    \newline (Jun, 24 - Present)
 \end{longtable}
 \end{contained}
-\vspace{0pt}
+
 \begin{contained}
 \sectionC{Positions of Responsibility}
-% \vspace{-10pt}
 \begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
-    Squad Coleader with Hange san & (Jan,21 – Jan,22)\\
-    Member @ Historia Club & (Jul,21 - Oct,21)\\
-    Core Member @ Jeagerists & (Jan,22 - Present)\\
+    Member @ ASTRONUTS (College Astronomical Society) & (Aug, 23 – Present)\\
+    CANSAT Team Member & (Jun, 24 - Present)\\
+    Website Design Team Member @ HCD Department & (Nov, 24 - Present)\\
+    Ambience Team Member @ Odyssey Cultural Fest & (Dec, 23 - Jan, 24)
 \end{longtable}
-\vspace{0pt}
 \end{contained}
+
 \begin{contained}
 \sectionC{Awards and Achievements}
-\vspace{0pt}
 \begin{itemize}
-\vspace{-8pt}
     \setlength\itemsep{0.5pt}
-    \item First position in Titan slaying Hackathon (Team Levi)
-    \item 2.2k reputation on stack-exchange network.
-    \item First position in Sword fighting and aerial navigation.
+    \item Secured 50\% merit scholarship based on academic performance in 12th grade
+    \item JEE Advanced 2023: All India Rank 10,083
+    \item JEE Main 2023: 98.46 percentile
 \end{itemize}
-\vspace{0pt}
 \end{contained}
-\sectionC{Interests and Hobbies}
-\begin{contained}\\
+
+\sectionC{Technical Interests}
+\begin{contained}
 \begin{itemize}
-\vspace{-8pt}
     \setlength\itemsep{0.5pt}
-    \item Eren
-    \item ODM Gear
-    \item Reverse Engineering
-    \item \LaTeX
+    \item User Interface Design
+    \item System Architecture
+    \item Software Development
+    \item Human-Computer Interaction
 \end{itemize}
-% \vspace{5pt}
 \end{contained}
+
 Declaration: The above information is correct to the best of my knowledge.\newline
 \yourname\newline
 Date: \today
